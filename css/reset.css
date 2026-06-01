@@ -1,0 +1,74 @@
+/* reset.css - Awwwards-standard luxury layout reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overflow-x: hidden;
+  background-color: #0f0d0c;
+  scroll-behavior: auto; /* Required for Lenis smooth scrolling */
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #0f0d0c;
+  color: #f5ede6;
+}
+
+/* Typography elements */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: none; /* Hide default cursor on links too */
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: none; /* Hide default cursor on active elements */
+}
+
+button:focus, input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+img, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Hide default cursor globally on desktop */
+@media (hover: hover) and (pointer: fine) {
+  body, html, a, button, input, select, textarea, [role="button"] {
+    cursor: none !important;
+  }
+}
