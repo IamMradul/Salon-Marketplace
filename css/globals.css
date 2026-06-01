@@ -1,0 +1,300 @@
+/* globals.css - Design System, Typography, Custom Cursor, & Preloader */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Premium Dark Royal Color Palette */
+  --bg: #0f0d0c;           /* Deep warm onyx charcoal */
+  --surface: #1a1714;      /* Luxurious card background */
+  --rose: #c95b84;         /* Royal rose accent */
+  --rose-muted: #6b2d44;   /* Darker rose for hover and depths */
+  --gold: #dfb76c;         /* Royal gold accents */
+  --gold-glow: rgba(223, 183, 108, 0.15); /* Soft ambient gold glow */
+  --cream: #f5ede6;        /* Primary rich cream text */
+  --cream-muted: #9c8b82;  /* Secondary muted cream text */
+  --border: rgba(245, 237, 230, 0.08); /* Sophisticated hairline borders */
+  --border-gold: rgba(223, 183, 108, 0.15); /* Royal hairline borders */
+  
+  /* Fonts */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  
+  /* Transitions */
+  --e-out: cubic-bezier(0.25, 1, 0.5, 1);
+  --e-in-out: cubic-bezier(0.76, 0, 0.24, 1);
+  --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Scroll System (Lenis support) */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overflow: clip;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Custom Royal Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: var(--bg);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(223, 183, 108, 0.3);
+  border-radius: 3px;
+  transition: var(--transition-fast);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--gold);
+}
+
+/* Custom Cursor Elements */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background-color: var(--rose);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid var(--rose);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s var(--e-out), height 0.3s var(--e-out), background-color 0.3s var(--e-out), border-color 0.3s var(--e-out), border-radius 0.3s var(--e-out);
+}
+
+/* Custom Cursor States */
+body.cursor-hovered .cursor-dot {
+  opacity: 0;
+}
+
+body.cursor-hovered .cursor-ring {
+  width: 56px;
+  height: 56px;
+  background-color: rgba(201, 91, 132, 0.85); /* Rose pink with subtle alpha */
+  border-color: var(--rose);
+}
+
+/* Golden/Royal theme for interactive headers */
+body.cursor-royal-hovered .cursor-dot {
+  background-color: var(--gold);
+  opacity: 0;
+}
+
+body.cursor-royal-hovered .cursor-ring {
+  width: 64px;
+  height: 64px;
+  background-color: rgba(223, 183, 108, 0.85); /* Royal gold alpha */
+  border-color: var(--gold);
+}
+
+/* Image Drag Pill State */
+body.cursor-image-hovered .cursor-dot {
+  opacity: 0;
+}
+
+body.cursor-image-hovered .cursor-ring {
+  width: 90px;
+  height: 36px;
+  border-radius: 20px;
+  background-color: var(--cream);
+  border-color: var(--cream);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Text child inject inside cursor ring for Drag Pill */
+.cursor-ring::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--bg);
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  white-space: nowrap;
+}
+
+body.cursor-image-hovered .cursor-ring::after {
+  content: 'VIEW ✦';
+  opacity: 1;
+}
+
+body.cursor-drag-hovered .cursor-ring::after {
+  content: '← DRAG →';
+  opacity: 1;
+}
+
+/* Active Mouse Down Scale */
+body.cursor-active .cursor-ring {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+/* Page Loader overlay */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  overflow: hidden;
+  pointer-events: all;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-panel {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #080706; /* Solid luxury black */
+  transition: transform 1.2s var(--e-in-out);
+}
+
+#loader-top {
+  top: 0;
+  border-bottom: 0.5px solid var(--border-gold);
+}
+
+#loader-bottom {
+  bottom: 0;
+  border-top: 0.5px solid var(--border-gold);
+}
+
+/* Preloader branding content */
+.loader-content {
+  position: relative;
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.loader-brand {
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 0.3em;
+}
+
+.loader-brand span.char-wrap {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.loader-brand span.char {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: var(--cream);
+  text-transform: uppercase;
+  transform: translateY(110%);
+}
+
+.loader-brand span.char.royal-char {
+  color: var(--gold);
+  font-style: italic;
+}
+
+.loader-counter {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 10vw, 8rem);
+  font-weight: 300;
+  color: var(--gold);
+  opacity: 0.85;
+  line-height: 1;
+}
+
+.loader-tagline {
+  font-family: var(--font-body);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--cream-muted);
+  margin-top: 1rem;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* Global utility classes */
+.word-wrap {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.word-wrap span {
+  display: inline-block;
+  transform: translateY(110%);
+  will-change: transform;
+}
+
+/* Page sweeps transition overlay panel */
+.page-transition-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--rose-muted);
+  z-index: 99998;
+  transform: translateY(100%);
+  pointer-events: none;
+}
+
+.page-transition-overlay-gold {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--gold);
+  z-index: 99997;
+  transform: translateY(100%);
+  pointer-events: none;
+}
