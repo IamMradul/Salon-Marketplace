@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Optimization -->
+  <title>Lucknow Salon Marketplace | Premium Nawabi Beauty & Salon Services</title>
+  <meta name="description" content="Experience Lucknow's premier luxury beauty marketplace. Book professional makeup artists, elite salon sessions, and royal at-home pampering with legendary Awadhi hospitality.">
+  <meta name="keywords" content="Lucknow salon, beauty home service, bridal makeup Lucknow, Hazratganj salon, Nawabi beauty, Lucknow makeup artist">
+  <meta name="author" content="Lucknow Salon Marketplace">
+  
+  <!-- Font and Stylesheet linking -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/globals.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body class="will-animate">
+
+  <!-- DUAL ELEMENT LUXURY CUSTOM CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ROYAL PAGE PRELOADER OVERLAY -->
+  <div id="preloader" role="dialog" aria-modal="true" aria-label="Loading page">
+    <div id="loader-top" class="loader-panel"></div>
+    <div id="loader-bottom" class="loader-panel"></div>
+    <div class="loader-content">
+      <h2 class="loader-brand">LUCKNOW SALON</h2>
+      <div class="loader-counter">0%</div>
+      <p class="loader-tagline">Nawabi Glamour Delivered</p>
+    </div>
+  </div>
+
+  <!-- SWEEP ROUTING PAGE TRANSITION OVERLAYS -->
+  <div class="page-transition-overlay-gold"></div>
+  <div class="page-transition-overlay"></div>
+
+  <!-- LOGO & STICKY NAVIGATION BAR -->
+  <header class="header">
+    <a href="#" class="logo" aria-label="Lucknow Salon Logo">
+      <svg class="logo-crest" viewBox="0 0 100 100">
+        <!-- Royal architectural arch motif -->
+        <path d="M 50,15 C 30,15 15,35 15,65 L 15,85 L 85,85 L 85,65 C 85,35 70,15 50,15 Z M 50,5 L 50,15" />
+        <circle cx="50" cy="50" r="10" />
+      </svg>
+      LUCKNOW <span>SALON</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary Navigation">
+      <a href="#hero" class="nav-link animated-underline">Home</a>
+      <a href="#services" class="nav-link animated-underline">Services</a>
+      <a href="#salons" class="nav-link animated-underline">Salons</a>
+      <a href="#shop" class="nav-link animated-underline">Shop</a>
+      <a href="#testimonials" class="nav-link animated-underline">Testimonials</a>
+    </nav>
+    <button class="nav-cta book-trigger-btn" data-target="General Appointment" aria-haspopup="dialog">
+      Book Appointment
+    </button>
+  </header>
+
+  <!-- MAIN SCROLLABLE WRAPPER (LENIS CONTENT) -->
+  <main id="main-content">
+
+    <!-- SECTION 1 — HERO SECTION -->
+    <section id="hero" class="hero">
+      <div class="hero-bg-container">
+        <img class="hero-bg" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=1920" alt="Premium Beauty Care Background" fetchpriority="high">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-headline">
+          <span class="hero-word line-1">Nawabi</span>
+          <span class="hero-word line-2">Glamour</span>
+          <span class="hero-word line-3">Delivered.</span>
+        </h1>
+        <p class="hero-subtext">
+          Book makeup · salon visits · home beauty — across Lucknow. Experience royal care inspired by heritage.
+        </p>
+        <div class="hero-cta-row">
+          <button class="btn-pill-rose book-trigger-btn" data-target="Nawabi Royal Experience">
+            Book Now <span class="arrow">→</span>
+          </button>
+          <a href="#salons" class="link-ghost animated-underline">Explore salons</a>
+        </div>
+      </div>
+      <!-- Marquee Horizontal Ticker -->
+      <div class="hero-marquee-bar">
+        <div class="marquee-wrap">
+          <div class="marquee-content">
+            <span>BRIDAL MAKEUP <span class="marquee-divider">✦</span> DATE NIGHT GLAM <span class="marquee-divider">✦</span> HOME SERVICE <span class="marquee-divider">✦</span> NORMAL MAKEUP <span class="marquee-divider">✦</span> HAZRATGANJ <span class="marquee-divider">✦</span> GOMTI NAGAR <span class="marquee-divider">✦</span></span>
+            <span>BRIDAL MAKEUP <span class="marquee-divider">✦</span> DATE NIGHT GLAM <span class="marquee-divider">✦</span> HOME SERVICE <span class="marquee-divider">✦</span> NORMAL MAKEUP <span class="marquee-divider">✦</span> HAZRATGANJ <span class="marquee-divider">✦</span> GOMTI NAGAR <span class="marquee-divider">✦</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — SCROLL-PINNED ROYAL INTRO STATEMENT -->
+    <section id="intro" class="intro-section">
+      <div class="intro-sticky-container">
+        <div class="intro-royal-frame"></div>
+        <svg class="intro-royal-crest" viewBox="0 0 100 100">
+          <path d="M 50,5 L 50,30 M 35,20 L 65,20 M 50,45 C 38,45 30,55 30,75 L 70,75 C 70,55 62,45 50,45 Z" />
+          <circle cx="50" cy="38" r="4" />
+        </svg>
+        <p class="intro-paragraph">
+          We bring Lucknow's finest beauty artists — to your salon chair or to your door. Every look, every occasion, every neighbourhood.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — SERVICES (Horizontal Scroll Panel) -->
+    <section id="services" class="h-section">
+      <div class="h-track" id="h-track">
+        
+        <!-- Panel 1 - Normal Makeup -->
+        <div class="h-panel">
+          <div class="panel-bg-wrap">
+            <img class="panel-bg" src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=1200" alt="Normal Makeup Panel Background" loading="lazy">
+            <div class="panel-overlay"></div>
+          </div>
+          <div class="panel-num">01</div>
+          <div class="panel-content">
+            <div class="panel-title-wrap">
+              <h2 class="panel-title">Normal <span>Makeup</span></h2>
+            </div>
+            <div class="panel-price-wrap">
+              <p class="panel-price">From ₹799 <span>/ session</span></p>
+            </div>
+            <div class="panel-cta">
+              <button class="btn-panel-book book-trigger-btn animated-underline" data-target="Normal Makeup Service">Book →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2 - Date Night -->
+        <div class="h-panel">
+          <div class="panel-bg-wrap">
+            <img class="panel-bg" src="https://images.unsplash.com/photo-1487412947147-5cebd900d626?auto=format&fit=crop&q=80&w=1200" alt="Date Night Makeup" loading="lazy">
+            <div class="panel-overlay"></div>
+          </div>
+          <div class="panel-num">02</div>
+          <div class="panel-content">
+            <div class="panel-title-wrap">
+              <h2 class="panel-title">Date Night <span>Makeup</span></h2>
+            </div>
+            <div class="panel-price-wrap">
+              <p class="panel-price">From ₹1,499 <span>/ session</span></p>
+            </div>
+            <div class="panel-cta">
+              <button class="btn-panel-book book-trigger-btn animated-underline" data-target="Date Night Makeup Service">Book →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3 - Bridal -->
+        <div class="h-panel">
+          <div class="panel-bg-wrap">
+            <img class="panel-bg" src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=1200" alt="Bridal Makeup" loading="lazy">
+            <div class="panel-overlay"></div>
+          </div>
+          <div class="panel-num">03</div>
+          <div class="panel-content">
+            <div class="panel-title-wrap">
+              <h2 class="panel-title">Bridal <span>Makeup</span></h2>
+            </div>
+            <div class="panel-price-wrap">
+              <p class="panel-price">From ₹8,999 <span>/ package</span></p>
+            </div>
+            <div class="panel-cta">
+              <button class="btn-panel-book book-trigger-btn animated-underline" data-target="Bridal Makeup Package">Book →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 4 - At-Home -->
+        <div class="h-panel">
+          <div class="panel-bg-wrap">
+            <img class="panel-bg" src="https://images.unsplash.com/photo-1522337628087-024889c64753?auto=format&fit=crop&q=80&w=1200" alt="At-Home Service" loading="lazy">
+            <div class="panel-overlay"></div>
+          </div>
+          <div class="panel-num">04</div>
+          <div class="panel-content">
+            <div class="panel-title-wrap">
+              <h2 class="panel-title">At-Home <span>Service</span></h2>
+            </div>
+            <div class="panel-price-wrap">
+              <p class="panel-price">We come to you <span>/ Anywhere in Lucknow</span></p>
+            </div>
+            <div class="panel-cta">
+              <button class="btn-panel-book book-trigger-btn animated-underline" data-target="At-Home Custom Care">Book →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 5 - Hair Styling -->
+        <div class="h-panel">
+          <div class="panel-bg-wrap">
+            <img class="panel-bg" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=1200" alt="Hair Styling" loading="lazy">
+            <div class="panel-overlay"></div>
+          </div>
+          <div class="panel-num">05</div>
+          <div class="panel-content">
+            <div class="panel-title-wrap">
+              <h2 class="panel-title">Hair <span>Styling</span></h2>
+            </div>
+            <div class="panel-price-wrap">
+              <p class="panel-price">From ₹499 <span>/ wash & cut</span></p>
+            </div>
+            <div class="panel-cta">
+              <button class="btn-panel-book book-trigger-btn animated-underline" data-target="Hair Styling Session">Book →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 6 - Facial & Skin -->
+        <div class="h-panel">
+          <div class="panel-bg-wrap">
+            <img class="panel-bg" src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=1200" alt="Facial & Skin Care" loading="lazy">
+            <div class="panel-overlay"></div>
+          </div>
+          <div class="panel-num">06</div>
+          <div class="panel-content">
+            <div class="panel-title-wrap">
+              <h2 class="panel-title">Facial & <span>Skin</span></h2>
+            </div>
+            <div class="panel-price-wrap">
+              <p class="panel-price">From ₹999 <span>/ treatment</span></p>
+            </div>
+            <div class="panel-cta">
+              <button class="btn-panel-book book-trigger-btn animated-underline" data-target="Ayurvedic Facial Detox">Book →</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4 — SALON SHOWCASE -->
+    <section id="salons" class="showcase-section">
+      <div class="showcase-header">
+        <h2 class="showcase-title">Featured <span>Salons</span></h2>
+        <p class="showcase-subtitle">Selected for their heritage craft, hygiene standards, and regal reputation.</p>
+      </div>
+      <!-- List will be painted dynamically by salons.js -->
+      <div class="salon-grid"></div>
+    </section>
+
+    <!-- SECTION 5 — "BOOK AT HOME" FEATURES (PARALLAX VIEW) -->
+    <section id="book-home" class="home-feature-section">
+      <div class="home-bg-wrap">
+        <img class="home-bg" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=1920" alt="At-Home Bridal Session" loading="lazy">
+        <div class="home-overlay"></div>
+      </div>
+      <div class="home-content">
+        <span class="home-label">At Your Doorstep</span>
+        <h2 class="home-title">Book a beauty artist for your home — anywhere in Lucknow</h2>
+        <div class="home-btn-wrap">
+          <!-- SVG outline border drawing pill button -->
+          <button class="svg-btn book-trigger-btn" data-target="Premium Home Service Package" aria-label="Book Home Service">
+            <svg>
+              <rect class="border-bg" x="3" y="3" width="274" height="58" rx="29" ry="29" />
+              <rect class="border-draw" x="3" y="3" width="274" height="58" rx="29" ry="29" />
+            </svg>
+            <span class="svg-btn-text">Book Home Service →</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 — PRODUCTS SHOP -->
+    <section id="shop" class="shop-section">
+      <div class="shop-header">
+        <div class="shop-title-wrap">
+          <h2 class="shop-title">Shop <span>beauty</span></h2>
+        </div>
+        <p class="shop-subtitle">Bring home the traditional fragrances, therapeutic elixirs, and organic remedies of ancient Avadh.</p>
+      </div>
+      <!-- Grid will be painted dynamically by products.js -->
+      <div class="products-grid"></div>
+    </section>
+
+    <!-- SECTION 7 — TESTIMONIALS (INFINITE SCROLLING REVIEWS) -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="testimonials-header">
+        <span class="testimonials-label">REGAL TESTIMONIALS</span>
+        <h2 class="testimonials-title">Loved by <span>Lucknow</span></h2>
+      </div>
+      <div class="testimonial-marquee-container">
+        <!-- Row 1 scrolls right -->
+        <div class="marquee-wrap">
+          <div class="marquee-content marquee-row-1"></div>
+        </div>
+        <!-- Row 2 scrolls left -->
+        <div class="marquee-wrap">
+          <div class="marquee-content-reverse marquee-row-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <!-- Traditional Royal Dome Arch vector silhouette in background -->
+      <svg class="footer-mesh" viewBox="0 0 100 100">
+        <path d="M 10,100 C 10,60 30,10 50,10 C 70,10 90,60 90,100 Z" />
+        <path d="M 20,100 C 20,70 35,25 50,25 C 65,25 80,70 80,100 Z" />
+        <path d="M 30,100 C 30,80 40,40 50,40 C 60,40 70,80 70,100 Z" />
+      </svg>
+      <div class="footer-top">
+        <div class="footer-brand-side">
+          <h3 class="footer-logo">LUCKNOW <span>SALON</span></h3>
+          <p class="footer-desc">
+            Bringing elite, handpicked beauty artisans and traditional Nawabi treatments direct to your chair or doorstep. Designed for discerning tastes.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-title">Marketplace</h4>
+          <div class="footer-links">
+            <a href="#hero" class="footer-link">Home</a>
+            <a href="#services" class="footer-link">Services</a>
+            <a href="#salons" class="footer-link">Salons</a>
+            <a href="#shop" class="footer-link">Cosmetics Shop</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Neighborhoods</h4>
+          <div class="footer-links">
+            <a href="#salons" class="footer-link">Hazratganj</a>
+            <a href="#salons" class="footer-link">Gomti Nagar</a>
+            <a href="#salons" class="footer-link">Aliganj</a>
+            <a href="#salons" class="footer-link">Indira Nagar</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <p class="footer-address">
+            The Royal Pavilion, 12 Ganj Road,<br>
+            Hazratganj, Lucknow,<br>
+            Uttar Pradesh 226001<br><br>
+            info@lucknowsalon.com
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; 2026 Lucknow Salon Marketplace. All rights reserved. Crafted with care.
+        </p>
+        <span class="footer-hospitality">Pehle Aap Hospitality ✦ Royal Awadhi Heritage</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- INTERACTIVE BOOKING DIALOG (BLUR MODAL) -->
+  <div id="booking-modal" class="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop"></div>
+    <div class="modal-container">
+      <button class="modal-close" aria-label="Close dialog">
+        <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      
+      <!-- Booking Form -->
+      <form id="booking-form" class="modal-form" action="#">
+        <div class="modal-header">
+          <h3 id="modal-title" class="modal-title">Royal <span>Reservation</span></h3>
+          <p class="modal-subtitle">Indulge in Lucknow's finest styling court</p>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="modal-name-input">Your Noble Name</label>
+          <input class="form-input" id="modal-name-input" type="text" placeholder="e.g. Princess Aaliyah" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="modal-phone-input">Noble Contact Number</label>
+          <input class="form-input" id="modal-phone-input" type="tel" placeholder="e.g. +91 98765 43210" required autocomplete="tel">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="modal-service-select">Desired Court Treatment</label>
+          <select class="form-select" id="modal-service-select" required>
+            <option value="" disabled selected>Select service or salon...</option>
+            <optgroup label="Salons">
+              <option value="Nawabi Oud & Rose Salon">Nawabi Oud & Rose Salon</option>
+              <option value="The Hazratganj Glamour Court">The Hazratganj Glamour Court</option>
+              <option value="Gomti Nagar Luxe Spa & Studio">Gomti Nagar Luxe Spa & Studio</option>
+              <option value="Aliganj Royal Grooming & Bridal">Aliganj Royal Grooming & Bridal</option>
+            </optgroup>
+            <optgroup label="Services">
+              <option value="Normal Makeup Service">Normal Makeup Service (₹799)</option>
+              <option value="Date Night Makeup Service">Date Night Makeup Service (₹1,499)</option>
+              <option value="Bridal Makeup Package">Bridal Makeup Package (₹8,999)</option>
+              <option value="At-Home Custom Care">At-Home Custom Care (Flexible)</option>
+              <option value="Hair Styling Session">Hair Styling Session (₹499)</option>
+              <option value="Ayurvedic Facial Detox">Ayurvedic Facial Detox (₹999)</option>
+            </optgroup>
+          </select>
+        </div>
+        <button type="submit" class="btn-form-submit">Confirm Royal Booking</button>
+      </form>
+
+      <!-- Booking Success Overlay -->
+      <div id="booking-success-screen" class="booking-success-screen">
+        <svg class="success-icon" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" />
+          <path d="M30,52 L45,67 L70,37" />
+        </svg>
+        <h3 class="success-title">Booking <span>Confirmed!</span></h3>
+        <p class="success-text">
+          Your noble reservation is recorded. A beauty artisan will reach out shortly to honor your schedule. We look forward to welcoming you with traditional 'Pehle Aap' hospitality.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CORE SCRIPTS - GSAP + SCROLLTRIGGER + LENIS + APP CONTROLLER -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  
+  <!-- Main Orchestrator Modules -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
