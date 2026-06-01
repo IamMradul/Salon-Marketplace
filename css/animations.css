@@ -1,0 +1,184 @@
+/* animations.css - High-End CSS Keyframes, Underline Effects, Ripples, & Transitions */
+
+/* Will Change optimizations for hardware acceleration */
+.will-animate {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Premium Animated Underline for Links and Ghost Buttons */
+.animated-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: var(--gold);
+  transition: width 0.4s var(--e-out);
+}
+
+.animated-underline:hover::after {
+  width: 100%;
+}
+
+/* Reverse animated underline (draws from right or scales from center) */
+.animated-underline-center {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-underline-center::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0%;
+  height: 1px;
+  background-color: var(--rose);
+  transform: translateX(-50%);
+  transition: width 0.4s var(--e-out);
+}
+
+.animated-underline-center:hover::after {
+  width: 100%;
+}
+
+/* Infinite Horizontal Marquee CSS Loop */
+.marquee-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+}
+
+.marquee-content {
+  display: inline-flex;
+  flex-shrink: 0;
+  animation: marquee-scroll 30s linear infinite;
+  gap: 2rem;
+  padding-right: 2rem;
+}
+
+.marquee-content-reverse {
+  display: inline-flex;
+  flex-shrink: 0;
+  animation: marquee-scroll-reverse 35s linear infinite;
+  gap: 2rem;
+  padding-right: 2rem;
+}
+
+/* Testimonials scrollers will pause on hover */
+.marquee-wrap:hover .marquee-content,
+.marquee-wrap:hover .marquee-content-reverse {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Button & Card Click Ripple Animation */
+.ripple-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  background-color: rgba(255, 255, 255, 0.25);
+  pointer-events: none;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  animation: ripple-effect 0.65s var(--e-out);
+}
+
+.ripple-gold {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  background-color: rgba(223, 183, 108, 0.3);
+  pointer-events: none;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  animation: ripple-effect 0.65s var(--e-out);
+}
+
+@keyframes ripple-effect {
+  to {
+    transform: scale(3.5);
+    opacity: 0;
+  }
+}
+
+/* 3D Character Rotations (Shop beauty title) */
+.char-3d-wrap {
+  perspective: 1000px;
+  display: inline-block;
+}
+
+.char-3d {
+  display: inline-block;
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+}
+
+/* Floating animation for royal cards */
+@keyframes royal-float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.royal-floating {
+  animation: royal-float 6s ease-in-out infinite;
+}
+
+/* Soft gold glow pulse */
+@keyframes gold-pulse {
+  0% {
+    box-shadow: 0 0 10px var(--gold-glow);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(223, 183, 108, 0.35);
+  }
+  100% {
+    box-shadow: 0 0 10px var(--gold-glow);
+  }
+}
+
+.gold-glow-pulse {
+  animation: gold-pulse 4s ease-in-out infinite;
+}
