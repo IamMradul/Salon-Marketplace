@@ -3,21 +3,31 @@
 
 :root {
   /* Premium Dark Royal Color Palette */
-  --bg: #0f0d0c;           /* Deep warm onyx charcoal */
-  --surface: #1a1714;      /* Luxurious card background */
-  --rose: #c95b84;         /* Royal rose accent */
-  --rose-muted: #6b2d44;   /* Darker rose for hover and depths */
-  --gold: #dfb76c;         /* Royal gold accents */
-  --gold-glow: rgba(223, 183, 108, 0.15); /* Soft ambient gold glow */
-  --cream: #f5ede6;        /* Primary rich cream text */
-  --cream-muted: #9c8b82;  /* Secondary muted cream text */
-  --border: rgba(245, 237, 230, 0.08); /* Sophisticated hairline borders */
-  --border-gold: rgba(223, 183, 108, 0.15); /* Royal hairline borders */
-  
+  --bg: #0f0d0c;
+  /* Deep warm onyx charcoal */
+  --surface: #1a1714;
+  /* Luxurious card background */
+  --rose: #c95b84;
+  /* Royal rose accent */
+  --rose-muted: #6b2d44;
+  /* Darker rose for hover and depths */
+  --gold: #dfb76c;
+  /* Royal gold accents */
+  --gold-glow: rgba(223, 183, 108, 0.15);
+  /* Soft ambient gold glow */
+  --cream: #f5ede6;
+  /* Primary rich cream text */
+  --cream-muted: #9c8b82;
+  /* Secondary muted cream text */
+  --border: rgba(245, 237, 230, 0.08);
+  /* Sophisticated hairline borders */
+  --border-gold: rgba(223, 183, 108, 0.15);
+  /* Royal hairline borders */
+
   /* Fonts */
   --font-display: 'Cormorant Garamond', serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
-  
+
   /* Transitions */
   --e-out: cubic-bezier(0.25, 1, 0.5, 1);
   --e-in-out: cubic-bezier(0.76, 0, 0.24, 1);
@@ -25,8 +35,19 @@
   --transition-fast: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  opacity: 1;
+}
+
 /* Scroll System (Lenis support) */
-html.lenis, html.lenis body {
+html.lenis,
+html.lenis body {
   height: auto;
 }
 
@@ -76,7 +97,7 @@ html.lenis, html.lenis body {
   background-color: var(--rose);
   border-radius: 50%;
   pointer-events: none;
-  z-index: 10000;
+  z-index: 2147483647 !important;
   transform: translate(-50%, -50%);
   opacity: 1;
   transition: opacity 0.25s ease, background-color 0.25s ease;
@@ -91,7 +112,7 @@ html.lenis, html.lenis body {
   border: 1.5px solid var(--rose);
   border-radius: 50%;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 2147483646 !important;
   transform: translate(-50%, -50%);
   transition: width 0.3s var(--e-out), height 0.3s var(--e-out), background-color 0.3s var(--e-out), border-color 0.3s var(--e-out), border-radius 0.3s var(--e-out);
 }
@@ -104,7 +125,8 @@ body.cursor-hovered .cursor-dot {
 body.cursor-hovered .cursor-ring {
   width: 56px;
   height: 56px;
-  background-color: rgba(201, 91, 132, 0.85); /* Rose pink with subtle alpha */
+  background-color: rgba(201, 91, 132, 0.85);
+  /* Rose pink with subtle alpha */
   border-color: var(--rose);
 }
 
@@ -117,7 +139,8 @@ body.cursor-royal-hovered .cursor-dot {
 body.cursor-royal-hovered .cursor-ring {
   width: 64px;
   height: 64px;
-  background-color: rgba(223, 183, 108, 0.85); /* Royal gold alpha */
+  background-color: rgba(223, 183, 108, 0.85);
+  /* Royal gold alpha */
   border-color: var(--gold);
 }
 
@@ -188,7 +211,8 @@ body.cursor-active .cursor-ring {
   left: 0;
   width: 100%;
   height: 50%;
-  background-color: #080706; /* Solid luxury black */
+  background-color: #080706;
+  /* Solid luxury black */
   transition: transform 1.2s var(--e-in-out);
 }
 
@@ -277,24 +301,26 @@ body.cursor-active .cursor-ring {
 /* Page sweeps transition overlay panel */
 .page-transition-overlay {
   position: fixed;
-  top: 0;
+  top: 100%;
+  /* Positioned completely below the viewport by default */
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: var(--rose-muted);
-  z-index: 99998;
-  transform: translateY(100%);
+  z-index: 2147483645 !important;
+  /* Position just under the cursor but above everything else */
   pointer-events: none;
 }
 
 .page-transition-overlay-gold {
   position: fixed;
-  top: 0;
+  top: 100%;
+  /* Positioned completely below the viewport by default */
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: var(--gold);
-  z-index: 99997;
-  transform: translateY(100%);
+  z-index: 2147483644 !important;
+  /* Position just under the cursor but above everything else */
   pointer-events: none;
 }

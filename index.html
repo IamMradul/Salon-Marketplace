@@ -1,37 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- SEO Optimization -->
-  <title>Lucknow Salon Marketplace | Premium Nawabi Beauty & Salon Services</title>
-  <meta name="description" content="Experience Lucknow's premier luxury beauty marketplace. Book professional makeup artists, elite salon sessions, and royal at-home pampering with legendary Awadhi hospitality.">
-  <meta name="keywords" content="Lucknow salon, beauty home service, bridal makeup Lucknow, Hazratganj salon, Nawabi beauty, Lucknow makeup artist">
-  <meta name="author" content="Lucknow Salon Marketplace">
-  
+  <title>Nawabi Glam | Home of Premium Nawabi Beauty</title>
+  <meta name="description"
+    content="Experience Lucknow's premier luxury beauty marketplace. Book professional makeup artists, elite salon sessions, and royal at-home pampering with legendary Awadhi hospitality.">
+  <meta name="keywords"
+    content="Lucknow salon, beauty home service, bridal makeup Lucknow, Hazratganj salon, Nawabi beauty, Lucknow makeup artist">
+  <meta name="author" content="Nawabi Glam">
+
   <!-- Font and Stylesheet linking -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/globals.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/sections.css">
 </head>
-<body class="will-animate">
+
+<body>
 
   <!-- DUAL ELEMENT LUXURY CUSTOM CURSOR -->
   <div class="cursor-dot"></div>
   <div class="cursor-ring"></div>
-
-  <!-- ROYAL PAGE PRELOADER OVERLAY -->
-  <div id="preloader" role="dialog" aria-modal="true" aria-label="Loading page">
-    <div id="loader-top" class="loader-panel"></div>
-    <div id="loader-bottom" class="loader-panel"></div>
-    <div class="loader-content">
-      <h2 class="loader-brand">LUCKNOW SALON</h2>
-      <div class="loader-counter">0%</div>
-      <p class="loader-tagline">Nawabi Glamour Delivered</p>
-    </div>
-  </div>
 
   <!-- SWEEP ROUTING PAGE TRANSITION OVERLAYS -->
   <div class="page-transition-overlay-gold"></div>
@@ -39,20 +32,19 @@
 
   <!-- LOGO & STICKY NAVIGATION BAR -->
   <header class="header">
-    <a href="#" class="logo" aria-label="Lucknow Salon Logo">
+    <a href="/" class="logo" aria-label="Nawabi Glam Logo">
       <svg class="logo-crest" viewBox="0 0 100 100">
         <!-- Royal architectural arch motif -->
         <path d="M 50,15 C 30,15 15,35 15,65 L 15,85 L 85,85 L 85,65 C 85,35 70,15 50,15 Z M 50,5 L 50,15" />
         <circle cx="50" cy="50" r="10" />
       </svg>
-      LUCKNOW <span>SALON</span>
+      NAWABI <span>GLAM</span>
     </a>
     <nav class="nav-links" aria-label="Primary Navigation">
-      <a href="#hero" class="nav-link animated-underline">Home</a>
-      <a href="#services" class="nav-link animated-underline">Services</a>
-      <a href="#salons" class="nav-link animated-underline">Salons</a>
-      <a href="#shop" class="nav-link animated-underline">Shop</a>
-      <a href="#testimonials" class="nav-link animated-underline">Testimonials</a>
+      <a href="/" class="nav-link animated-underline active">Home</a>
+      <a href="services" class="nav-link animated-underline">Services</a>
+      <a href="salons" class="nav-link animated-underline">Salons</a>
+      <a href="shop" class="nav-link animated-underline">Shop</a>
     </nav>
     <button class="nav-cta book-trigger-btn" data-target="General Appointment" aria-haspopup="dialog">
       Book Appointment
@@ -65,14 +57,21 @@
     <!-- SECTION 1 — HERO SECTION -->
     <section id="hero" class="hero">
       <div class="hero-bg-container">
-        <img class="hero-bg" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=1920" alt="Premium Beauty Care Background" fetchpriority="high">
+        <img class="hero-bg" src="https://i.pinimg.com/1200x/7d/be/1d/7dbe1d60c4fbbaf9ad3143b2aa2510ab.jpg"
+          alt="Premium Nawabi Beauty Background" fetchpriority="high">
+        <img class="hero-bg-salon"
+          src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=1920"
+          alt="Royal Salon Styling Court" loading="lazy">
         <div class="hero-overlay"></div>
       </div>
+      <p class="hero-salon-morph-caption"><span class="royal-ornament">✦</span> Welcome to the Royal Court of Styling
+        <span class="royal-ornament">✦</span>
+      </p>
       <div class="hero-content">
         <h1 class="hero-headline">
-          <span class="hero-word line-1">Nawabi</span>
-          <span class="hero-word line-2">Glamour</span>
-          <span class="hero-word line-3">Delivered.</span>
+          <span class="hero-word line-1">Glam,</span>
+          <span class="hero-word line-2">the Nawabi</span>
+          <span class="hero-word line-3">Way.</span>
         </h1>
         <p class="hero-subtext">
           Book makeup · salon visits · home beauty — across Lucknow. Experience royal care inspired by heritage.
@@ -81,15 +80,21 @@
           <button class="btn-pill-rose book-trigger-btn" data-target="Nawabi Royal Experience">
             Book Now <span class="arrow">→</span>
           </button>
-          <a href="#salons" class="link-ghost animated-underline">Explore salons</a>
+          <a href="salons" class="link-ghost animated-underline">Explore salons</a>
         </div>
       </div>
       <!-- Marquee Horizontal Ticker -->
       <div class="hero-marquee-bar">
         <div class="marquee-wrap">
           <div class="marquee-content">
-            <span>BRIDAL MAKEUP <span class="marquee-divider">✦</span> DATE NIGHT GLAM <span class="marquee-divider">✦</span> HOME SERVICE <span class="marquee-divider">✦</span> NORMAL MAKEUP <span class="marquee-divider">✦</span> HAZRATGANJ <span class="marquee-divider">✦</span> GOMTI NAGAR <span class="marquee-divider">✦</span></span>
-            <span>BRIDAL MAKEUP <span class="marquee-divider">✦</span> DATE NIGHT GLAM <span class="marquee-divider">✦</span> HOME SERVICE <span class="marquee-divider">✦</span> NORMAL MAKEUP <span class="marquee-divider">✦</span> HAZRATGANJ <span class="marquee-divider">✦</span> GOMTI NAGAR <span class="marquee-divider">✦</span></span>
+            <span>BRIDAL MAKEUP <span class="marquee-divider">✦</span> DATE NIGHT GLAM <span
+                class="marquee-divider">✦</span> HOME SERVICE <span class="marquee-divider">✦</span> NORMAL MAKEUP <span
+                class="marquee-divider">✦</span> HAZRATGANJ <span class="marquee-divider">✦</span> GOMTI NAGAR <span
+                class="marquee-divider">✦</span></span>
+            <span>BRIDAL MAKEUP <span class="marquee-divider">✦</span> DATE NIGHT GLAM <span
+                class="marquee-divider">✦</span> HOME SERVICE <span class="marquee-divider">✦</span> NORMAL MAKEUP <span
+                class="marquee-divider">✦</span> HAZRATGANJ <span class="marquee-divider">✦</span> GOMTI NAGAR <span
+                class="marquee-divider">✦</span></span>
           </div>
         </div>
       </div>
@@ -98,193 +103,176 @@
     <!-- SECTION 2 — SCROLL-PINNED ROYAL INTRO STATEMENT -->
     <section id="intro" class="intro-section">
       <div class="intro-sticky-container">
-        <div class="intro-royal-frame"></div>
+        <!-- Ambient Royal Glow Backdrop -->
+        <div class="intro-bg-glow"></div>
+
+        <!-- Royal Awadhi Jali Lattice Backdrop -->
+        <svg class="intro-jali-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <defs>
+            <pattern id="jali-pattern-intro" width="20" height="20" patternUnits="userSpaceOnUse">
+              <path d="M 10,0 L 20,10 L 10,20 L 0,10 Z M 10,0 L 10,20 M 0,10 L 20,10" fill="none"
+                stroke="rgba(223, 183, 108, 0.04)" stroke-width="0.5" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#jali-pattern-intro)" />
+        </svg>
+
+        <!-- Double Architectural Scalloped SVG Arches -->
+        <svg class="intro-royal-frame-svg" viewBox="0 0 1000 800" preserveAspectRatio="none">
+          <path class="intro-arch-outer"
+            d="M 50, 780 L 50, 420 C 50, 270 150, 170 250, 170 C 300, 90 400, 50 500, 50 C 600, 50 700, 90 750, 170 C 850, 170 950, 270 950, 420 L 950, 780" />
+          <path class="intro-arch-inner"
+            d="M 75, 780 L 75, 430 C 75, 290 165, 195 260, 195 C 310, 115 405, 75 500, 75 C 595, 75 690, 115 740, 195 C 835, 195 925, 290 925, 430 L 925, 780" />
+        </svg>
+
+        <!-- Pinned Gold Crest -->
         <svg class="intro-royal-crest" viewBox="0 0 100 100">
           <path d="M 50,5 L 50,30 M 35,20 L 65,20 M 50,45 C 38,45 30,55 30,75 L 70,75 C 70,55 62,45 50,45 Z" />
           <circle cx="50" cy="38" r="4" />
         </svg>
+
+        <!-- Intro Paragraph -->
         <p class="intro-paragraph">
-          We bring Lucknow's finest beauty artists — to your salon chair or to your door. Every look, every occasion, every neighbourhood.
+          We bring Lucknow's finest beauty artists — to your salon chair or to your door. Every look, every occasion,
+          every neighbourhood.
         </p>
       </div>
     </section>
 
-    <!-- SECTION 3 — SERVICES (Horizontal Scroll Panel) -->
-    <section id="services" class="h-section">
-      <div class="h-track" id="h-track">
-        
-        <!-- Panel 1 - Normal Makeup -->
-        <div class="h-panel">
-          <div class="panel-bg-wrap">
-            <img class="panel-bg" src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=1200" alt="Normal Makeup Panel Background" loading="lazy">
-            <div class="panel-overlay"></div>
-          </div>
-          <div class="panel-num">01</div>
-          <div class="panel-content">
-            <div class="panel-title-wrap">
-              <h2 class="panel-title">Normal <span>Makeup</span></h2>
-            </div>
-            <div class="panel-price-wrap">
-              <p class="panel-price">From ₹799 <span>/ session</span></p>
-            </div>
-            <div class="panel-cta">
-              <button class="btn-panel-book book-trigger-btn animated-underline" data-target="Normal Makeup Service">Book →</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Panel 2 - Date Night -->
-        <div class="h-panel">
-          <div class="panel-bg-wrap">
-            <img class="panel-bg" src="https://images.unsplash.com/photo-1487412947147-5cebd900d626?auto=format&fit=crop&q=80&w=1200" alt="Date Night Makeup" loading="lazy">
-            <div class="panel-overlay"></div>
-          </div>
-          <div class="panel-num">02</div>
-          <div class="panel-content">
-            <div class="panel-title-wrap">
-              <h2 class="panel-title">Date Night <span>Makeup</span></h2>
-            </div>
-            <div class="panel-price-wrap">
-              <p class="panel-price">From ₹1,499 <span>/ session</span></p>
-            </div>
-            <div class="panel-cta">
-              <button class="btn-panel-book book-trigger-btn animated-underline" data-target="Date Night Makeup Service">Book →</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Panel 3 - Bridal -->
-        <div class="h-panel">
-          <div class="panel-bg-wrap">
-            <img class="panel-bg" src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=1200" alt="Bridal Makeup" loading="lazy">
-            <div class="panel-overlay"></div>
-          </div>
-          <div class="panel-num">03</div>
-          <div class="panel-content">
-            <div class="panel-title-wrap">
-              <h2 class="panel-title">Bridal <span>Makeup</span></h2>
-            </div>
-            <div class="panel-price-wrap">
-              <p class="panel-price">From ₹8,999 <span>/ package</span></p>
-            </div>
-            <div class="panel-cta">
-              <button class="btn-panel-book book-trigger-btn animated-underline" data-target="Bridal Makeup Package">Book →</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Panel 4 - At-Home -->
-        <div class="h-panel">
-          <div class="panel-bg-wrap">
-            <img class="panel-bg" src="https://images.unsplash.com/photo-1522337628087-024889c64753?auto=format&fit=crop&q=80&w=1200" alt="At-Home Service" loading="lazy">
-            <div class="panel-overlay"></div>
-          </div>
-          <div class="panel-num">04</div>
-          <div class="panel-content">
-            <div class="panel-title-wrap">
-              <h2 class="panel-title">At-Home <span>Service</span></h2>
-            </div>
-            <div class="panel-price-wrap">
-              <p class="panel-price">We come to you <span>/ Anywhere in Lucknow</span></p>
-            </div>
-            <div class="panel-cta">
-              <button class="btn-panel-book book-trigger-btn animated-underline" data-target="At-Home Custom Care">Book →</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Panel 5 - Hair Styling -->
-        <div class="h-panel">
-          <div class="panel-bg-wrap">
-            <img class="panel-bg" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=1200" alt="Hair Styling" loading="lazy">
-            <div class="panel-overlay"></div>
-          </div>
-          <div class="panel-num">05</div>
-          <div class="panel-content">
-            <div class="panel-title-wrap">
-              <h2 class="panel-title">Hair <span>Styling</span></h2>
-            </div>
-            <div class="panel-price-wrap">
-              <p class="panel-price">From ₹499 <span>/ wash & cut</span></p>
-            </div>
-            <div class="panel-cta">
-              <button class="btn-panel-book book-trigger-btn animated-underline" data-target="Hair Styling Session">Book →</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Panel 6 - Facial & Skin -->
-        <div class="h-panel">
-          <div class="panel-bg-wrap">
-            <img class="panel-bg" src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=1200" alt="Facial & Skin Care" loading="lazy">
-            <div class="panel-overlay"></div>
-          </div>
-          <div class="panel-num">06</div>
-          <div class="panel-content">
-            <div class="panel-title-wrap">
-              <h2 class="panel-title">Facial & <span>Skin</span></h2>
-            </div>
-            <div class="panel-price-wrap">
-              <p class="panel-price">From ₹999 <span>/ treatment</span></p>
-            </div>
-            <div class="panel-cta">
-              <button class="btn-panel-book book-trigger-btn animated-underline" data-target="Ayurvedic Facial Detox">Book →</button>
-            </div>
-          </div>
-        </div>
-
+    <!-- SECTION 3 - PREVIEW & SNEAK PEEK PANELS -->
+    <section id="discover" class="showcase-section"
+      style="background-color: var(--bg); border-top: 1px solid var(--border-gold);">
+      <div class="showcase-header" style="margin-bottom: 4rem;">
+        <h2 class="showcase-title reveal-on-scroll">Royal <span>Marketplace</span></h2>
+        <p class="showcase-subtitle reveal-on-scroll">Embark on a personalized journey through our dedicated styling
+          courts.</p>
       </div>
-    </section>
 
-    <!-- SECTION 4 — SALON SHOWCASE -->
-    <section id="salons" class="showcase-section">
-      <div class="showcase-header">
-        <h2 class="showcase-title">Featured <span>Salons</span></h2>
-        <p class="showcase-subtitle">Selected for their heritage craft, hygiene standards, and regal reputation.</p>
-      </div>
-      <!-- List will be painted dynamically by salons.js -->
-      <div class="salon-grid"></div>
-    </section>
+      <!-- Luxury Cards Showcase Grid -->
+      <div class="discover-grid">
 
-    <!-- SECTION 5 — "BOOK AT HOME" FEATURES (PARALLAX VIEW) -->
-    <section id="book-home" class="home-feature-section">
-      <div class="home-bg-wrap">
-        <img class="home-bg" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=1920" alt="At-Home Bridal Session" loading="lazy">
-        <div class="home-overlay"></div>
-      </div>
-      <div class="home-content">
-        <span class="home-label">At Your Doorstep</span>
-        <h2 class="home-title">Book a beauty artist for your home — anywhere in Lucknow</h2>
-        <div class="home-btn-wrap">
-          <!-- SVG outline border drawing pill button -->
-          <button class="svg-btn book-trigger-btn" data-target="Premium Home Service Package" aria-label="Book Home Service">
-            <svg>
-              <rect class="border-bg" x="3" y="3" width="274" height="58" rx="29" ry="29" />
-              <rect class="border-draw" x="3" y="3" width="274" height="58" rx="29" ry="29" />
+        <!-- Services preview -->
+        <div class="discover-card reveal-on-scroll">
+          <!-- Card Background Image and Overlay -->
+          <div class="card-bg-img-wrap">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=800&auto=format&fit=crop"
+              class="card-bg-img" alt="Elegant Beauty Services" loading="lazy">
+            <div class="card-bg-overlay"></div>
+          </div>
+
+          <!-- Scalloped Awadhi Arch SVG Overlay -->
+          <svg class="card-arch-svg" viewBox="0 0 300 450" preserveAspectRatio="none">
+            <path class="card-arch-path-bg"
+              d="M 15, 435 L 15, 160 C 15, 115 50, 100 80, 100 C 100, 65 120, 30 150, 30 C 180, 30 200, 65 220, 100 C 250, 100 285, 115 285, 160 L 285, 435 Z" />
+            <path class="card-arch-path"
+              d="M 15, 435 L 15, 160 C 15, 115 50, 100 80, 100 C 100, 65 120, 30 150, 30 C 180, 30 200, 65 220, 100 C 250, 100 285, 115 285, 160 L 285, 435 Z" />
+          </svg>
+
+          <!-- Royal Crest Ornament -->
+          <div class="card-crest-wrap">
+            <svg class="card-crest" viewBox="0 0 100 100">
+              <path d="M 50,20 C 53,35 60,40 70,45 C 60,50 55,58 50,75 C 45,58 40,50 30,45 C 40,40 47,35 50,20 Z"
+                fill="var(--gold)" />
+              <circle cx="50" cy="50" r="3" fill="var(--bg)" />
             </svg>
-            <span class="svg-btn-text">Book Home Service →</span>
-          </button>
+          </div>
+
+          <!-- Card Content -->
+          <div class="card-content-inner">
+            <h3 class="product-name discover-card-title">Elegant Services</h3>
+            <p class="product-desc discover-card-desc">Explore our curated index of custom treatments, date-night
+              cosmetics, and elite bridal hairdos designed to reveal your inner royal.</p>
+          </div>
+
+          <div class="discover-card-footer">
+            <a href="services" class="nav-cta discover-card-btn">View Services <span class="btn-arrow">→</span></a>
+          </div>
         </div>
+
+        <!-- Salons preview -->
+        <div class="discover-card reveal-on-scroll">
+          <!-- Card Background Image and Overlay -->
+          <div class="card-bg-img-wrap">
+            <img src="https://images.unsplash.com/photo-1633681926035-ec1ac984418a?q=80&w=800&auto=format&fit=crop"
+              class="card-bg-img" alt="Elite Salons" loading="lazy">
+            <div class="card-bg-overlay"></div>
+          </div>
+
+          <!-- Scalloped Awadhi Arch SVG Overlay -->
+          <svg class="card-arch-svg" viewBox="0 0 300 450" preserveAspectRatio="none">
+            <path class="card-arch-path-bg"
+              d="M 15, 435 L 15, 160 C 15, 115 50, 100 80, 100 C 100, 65 120, 30 150, 30 C 180, 30 200, 65 220, 100 C 250, 100 285, 115 285, 160 L 285, 435 Z" />
+            <path class="card-arch-path"
+              d="M 15, 435 L 15, 160 C 15, 115 50, 100 80, 100 C 100, 65 120, 30 150, 30 C 180, 30 200, 65 220, 100 C 250, 100 285, 115 285, 160 L 285, 435 Z" />
+          </svg>
+
+          <!-- Royal Crest Ornament -->
+          <div class="card-crest-wrap">
+            <svg class="card-crest" viewBox="0 0 100 100">
+              <path d="M 50,20 C 53,35 60,40 70,45 C 60,50 55,58 50,75 C 45,58 40,50 30,45 C 40,40 47,35 50,20 Z"
+                fill="var(--gold)" />
+              <circle cx="50" cy="50" r="3" fill="var(--bg)" />
+            </svg>
+          </div>
+
+          <!-- Card Content -->
+          <div class="card-content-inner">
+            <h3 class="product-name discover-card-title">Elite Salons</h3>
+            <p class="product-desc discover-card-desc">Discover Lucknow's premier salon courts across Hazratganj, Gomti
+              Nagar, and Aliganj. Book luxury sessions with handpicked beauty artisans.</p>
+          </div>
+
+          <div class="discover-card-footer">
+            <a href="salons" class="nav-cta discover-card-btn">Explore Salons <span class="btn-arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Shop preview -->
+        <div class="discover-card reveal-on-scroll">
+          <!-- Card Background Image and Overlay -->
+          <div class="card-bg-img-wrap">
+            <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&q=80&w=800"
+              class="card-bg-img" alt="Regal Cosmetics" loading="lazy">
+            <div class="card-bg-overlay"></div>
+          </div>
+
+          <!-- Scalloped Awadhi Arch SVG Overlay -->
+          <svg class="card-arch-svg" viewBox="0 0 300 450" preserveAspectRatio="none">
+            <path class="card-arch-path-bg"
+              d="M 15, 435 L 15, 160 C 15, 115 50, 100 80, 100 C 100, 65 120, 30 150, 30 C 180, 30 200, 65 220, 100 C 250, 100 285, 115 285, 160 L 285, 435 Z" />
+            <path class="card-arch-path"
+              d="M 15, 435 L 15, 160 C 15, 115 50, 100 80, 100 C 100, 65 120, 30 150, 30 C 180, 30 200, 65 220, 100 C 250, 100 285, 115 285, 160 L 285, 435 Z" />
+          </svg>
+
+          <!-- Royal Crest Ornament -->
+          <div class="card-crest-wrap">
+            <svg class="card-crest" viewBox="0 0 100 100">
+              <path d="M 50,20 C 53,35 60,40 70,45 C 60,50 55,58 50,75 C 45,58 40,50 30,45 C 40,40 47,35 50,20 Z"
+                fill="var(--gold)" />
+              <circle cx="50" cy="50" r="3" fill="var(--bg)" />
+            </svg>
+          </div>
+
+          <!-- Card Content -->
+          <div class="card-content-inner">
+            <h3 class="product-name discover-card-title">Regal Cosmetics</h3>
+            <p class="product-desc discover-card-desc">Bring home the hand-pressed jasmine oils, saffron face mists, and
+              mud detox masks formulated in the royal tradition of ancient Avadh.</p>
+          </div>
+
+          <div class="discover-card-footer">
+            <a href="shop" class="nav-cta discover-card-btn">Browse Shop <span class="btn-arrow">→</span></a>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- SECTION 6 — PRODUCTS SHOP -->
-    <section id="shop" class="shop-section">
-      <div class="shop-header">
-        <div class="shop-title-wrap">
-          <h2 class="shop-title">Shop <span>beauty</span></h2>
-        </div>
-        <p class="shop-subtitle">Bring home the traditional fragrances, therapeutic elixirs, and organic remedies of ancient Avadh.</p>
-      </div>
-      <!-- Grid will be painted dynamically by products.js -->
-      <div class="products-grid"></div>
-    </section>
-
-    <!-- SECTION 7 — TESTIMONIALS (INFINITE SCROLLING REVIEWS) -->
+    <!-- SECTION 4 — TESTIMONIALS (INFINITE SCROLLING REVIEWS) -->
     <section id="testimonials" class="testimonials-section">
       <div class="testimonials-header">
-        <span class="testimonials-label">REGAL TESTIMONIALS</span>
-        <h2 class="testimonials-title">Loved by <span>Lucknow</span></h2>
+        <span class="testimonials-label reveal-on-scroll">REGAL TESTIMONIALS</span>
+        <h2 class="testimonials-title reveal-on-scroll">Loved by <span>Lucknow</span></h2>
       </div>
       <div class="testimonial-marquee-container">
         <!-- Row 1 scrolls right -->
@@ -300,7 +288,6 @@
 
     <!-- FOOTER SECTION -->
     <footer class="footer">
-      <!-- Traditional Royal Dome Arch vector silhouette in background -->
       <svg class="footer-mesh" viewBox="0 0 100 100">
         <path d="M 10,100 C 10,60 30,10 50,10 C 70,10 90,60 90,100 Z" />
         <path d="M 20,100 C 20,70 35,25 50,25 C 65,25 80,70 80,100 Z" />
@@ -308,27 +295,28 @@
       </svg>
       <div class="footer-top">
         <div class="footer-brand-side">
-          <h3 class="footer-logo">LUCKNOW <span>SALON</span></h3>
+          <h3 class="footer-logo">NAWABI <span>GLAM</span></h3>
           <p class="footer-desc">
-            Bringing elite, handpicked beauty artisans and traditional Nawabi treatments direct to your chair or doorstep. Designed for discerning tastes.
+            Bringing elite, handpicked beauty artisans and traditional Nawabi treatments direct to your chair or
+            doorstep. Designed for discerning tastes.
           </p>
         </div>
         <div>
           <h4 class="footer-title">Marketplace</h4>
           <div class="footer-links">
-            <a href="#hero" class="footer-link">Home</a>
-            <a href="#services" class="footer-link">Services</a>
-            <a href="#salons" class="footer-link">Salons</a>
-            <a href="#shop" class="footer-link">Cosmetics Shop</a>
+            <a href="/" class="footer-link">Home</a>
+            <a href="services" class="footer-link">Services</a>
+            <a href="salons" class="footer-link">Salons</a>
+            <a href="shop" class="footer-link">Cosmetics Shop</a>
           </div>
         </div>
         <div>
           <h4 class="footer-title">Neighborhoods</h4>
           <div class="footer-links">
-            <a href="#salons" class="footer-link">Hazratganj</a>
-            <a href="#salons" class="footer-link">Gomti Nagar</a>
-            <a href="#salons" class="footer-link">Aliganj</a>
-            <a href="#salons" class="footer-link">Indira Nagar</a>
+            <a href="salons" class="footer-link">Hazratganj</a>
+            <a href="salons" class="footer-link">Gomti Nagar</a>
+            <a href="salons" class="footer-link">Aliganj</a>
+            <a href="salons" class="footer-link">Indira Nagar</a>
           </div>
         </div>
         <div>
@@ -337,15 +325,16 @@
             The Royal Pavilion, 12 Ganj Road,<br>
             Hazratganj, Lucknow,<br>
             Uttar Pradesh 226001<br><br>
-            info@lucknowsalon.com
+            info@nawabiglam.com
           </p>
         </div>
       </div>
       <div class="footer-bottom">
         <p class="footer-copyright">
-          &copy; 2026 Lucknow Salon Marketplace. All rights reserved. Crafted with care.
+          &copy; 2026 Nawabi Glam. All rights reserved. Crafted with care.
         </p>
-        <span class="footer-hospitality">Pehle Aap Hospitality ✦ Royal Awadhi Heritage</span>
+        <span class="footer-hospitality">Pehle Aap Hospitality <span class="royal-ornament">✦</span> Royal Awadhi
+          Heritage</span>
       </div>
     </footer>
 
@@ -356,10 +345,11 @@
     <div class="modal-backdrop"></div>
     <div class="modal-container">
       <button class="modal-close" aria-label="Close dialog">
-        <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        <svg viewBox="0 0 24 24">
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
       </button>
-      
-      <!-- Booking Form -->
+
       <form id="booking-form" class="modal-form" action="#">
         <div class="modal-header">
           <h3 id="modal-title" class="modal-title">Royal <span>Reservation</span></h3>
@@ -367,11 +357,13 @@
         </div>
         <div class="form-group">
           <label class="form-label" for="modal-name-input">Your Noble Name</label>
-          <input class="form-input" id="modal-name-input" type="text" placeholder="e.g. Princess Aaliyah" required autocomplete="name">
+          <input class="form-input" id="modal-name-input" type="text" placeholder="e.g. Princess Aaliyah" required
+            autocomplete="name">
         </div>
         <div class="form-group">
           <label class="form-label" for="modal-phone-input">Noble Contact Number</label>
-          <input class="form-input" id="modal-phone-input" type="tel" placeholder="e.g. +91 98765 43210" required autocomplete="tel">
+          <input class="form-input" id="modal-phone-input" type="tel" placeholder="e.g. +91 98765 43210" required
+            autocomplete="tel">
         </div>
         <div class="form-group">
           <label class="form-label" for="modal-service-select">Desired Court Treatment</label>
@@ -396,7 +388,6 @@
         <button type="submit" class="btn-form-submit">Confirm Royal Booking</button>
       </form>
 
-      <!-- Booking Success Overlay -->
       <div id="booking-success-screen" class="booking-success-screen">
         <svg class="success-icon" viewBox="0 0 100 100">
           <circle cx="50" cy="50" r="45" />
@@ -404,7 +395,8 @@
         </svg>
         <h3 class="success-title">Booking <span>Confirmed!</span></h3>
         <p class="success-text">
-          Your noble reservation is recorded. A beauty artisan will reach out shortly to honor your schedule. We look forward to welcoming you with traditional 'Pehle Aap' hospitality.
+          Your noble reservation is recorded. A beauty artisan will reach out shortly to honor your schedule. We look
+          forward to welcoming you with traditional 'Pehle Aap' hospitality.
         </p>
       </div>
     </div>
@@ -414,8 +406,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-  
-  <!-- Main Orchestrator Modules -->
+
   <script type="module" src="js/main.js"></script>
 </body>
+
 </html>

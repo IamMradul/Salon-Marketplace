@@ -1,0 +1,25 @@
+{
+  "name": "lucknow-salon-marketplace",
+  "version": "1.0.0",
+  "description": "A premium, Awwwards-level luxury beauty marketplace called Nawabi Glam",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "luxury",
+    "beauty",
+    "salon",
+    "marketplace",
+    "lucknow",
+    "awwwards",
+    "gsap"
+  ],
+  "author": "Nawabi Glam",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
